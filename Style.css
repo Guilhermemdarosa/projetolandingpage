@@ -1,0 +1,187 @@
+/*assim se faz os comentários necessários
+    Color são as cores de texto
+    Background-color a cor do fundo
+    Margin é a margem padrão de todos os elementos*/  
+/*Margin se refere a margem que a imagem tem em relação a borda
+    podendo ser por exempo:
+    margin - A margem total
+    margin-left - A margem a esquerda
+    margin-top - A margem superior */
+
+*{
+    /* sempre manter dentro da configuração geral da pagina a fonte e margin 0 para evitar possíveis bugs na hora 
+    de organizar o dysplay da página*/
+    margin: 0px;
+    font-family: "inter";
+}
+
+#logodnc{    
+    margin-left: 50px;
+    margin-top:  50px;
+    
+}
+
+#titulo-menu-superior{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+#texto-meno-superior{
+    margin-left: 150px;
+    margin-top: 35px;
+    padding-bottom: 100px;
+
+}
+
+#menusuperior{
+    color: white;
+    font-family: "inter";
+    background-image: url(Imagens/planodefundo.svg);
+}
+
+#menuinformacional{
+    
+    /* grid trata da organização dos elementos em blocos de informação, neste caso foi feita uma organização por colonuas*/
+    background-color: #EAECE5;
+    display: grid;
+    grid-auto-flow: column;
+    
+}
+
+.icone{
+    /*margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    essa forma de formatação de margem pode ser resumida a uma linha
+    margin: mspx mdpx mipx mepx
+    ms = margem superior, md = margem da direita, mi = margem inferior e me = margem da esquerda*/
+    
+    margin: 50px 0px 50px 100px;
+    padding: 25px;
+
+}
+
+.textoinformativo{
+    /*display flex é responsável por possibilitar a movimentação dos elementos, como ele podemos usar o alinhamento de
+    texto, na situação em questão utilizamos o mesmo para centralizar os itens*/
+    display: flex;
+    align-items: center;
+}
+
+#secaovideo{
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+}
+
+#titulovideo{
+    color: #247BA0;
+    margin-top: 50px;
+}
+
+#video{
+    margin: 50px 25px 50px 100px;
+}
+
+#carrossel{
+    background-color: #247BA0;
+    padding: 50px;
+}
+
+#titulocarrossel{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+#divcards{
+    margin-top: 35px;
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+.card{
+    margin-left: 50px;
+
+}
+
+.seta{
+margin-top: 55%;
+cursor: pointer;
+/* existem muitas unidades de medidas e uma delas é a porcentagem que pode ser muito utilizada em algumas situações
+cursor pointer faz com que quando o cursor passe por cima do item ele fique na forma de clicavel*/
+}
+
+.seta:hover{
+/*flutuação para quando aproximar o mouse*/
+transform: translateY(-7px);
+transition-duration: 0.2s;
+}
+
+/*display none faz com que o elemento em questão não esteja presente no display a menos que haja uma interação pelo 
+java script*/
+#setaesquerda{
+    display: none;
+}
+
+#bruna{
+    display: none;
+}
+
+#formulario{
+text-align: center;
+
+}
+
+#tituloformulario{
+    font-size: 25px;
+    margin: 25px;
+    color: #383838;
+
+}
+
+input{
+    background-color: #EAECE5;
+    width: 300px;
+    height: 40px;
+    margin: 15px;
+    border: 0px;
+    border-radius: 5px;
+    padding-left: 10px;
+    /* border se refere a expessura da bordar.
+    border radius se refere a curvatura nos cantinhos da borda
+    padding-left é para que as palavras dentro da caixa de texto não fiquem coladas na borda e tenham um certo espaço
+    */
+
+}
+
+button{
+background-color: #247BA0;
+height: 40px;
+width: 250px;
+color:#EAECE5;
+border: 0px;
+border-radius: 5px;
+margin-bottom: 50px;
+margin-top: 15px;
+font-weight: bolder;
+cursor: pointer;
+/*margin-bottom é a margem do final da página
+font-weight é espessura da letra, podendo fazer por exemplo o efeito do negrito*/
+}
+
+button:hover{
+    /*a função hover altera o elemento em questão ao sobrepor o mesmo com o cursor*/
+    background-color: #247BA0;
+    color:white;
+    transform: translateY(-7px);
+    box-shadow: 0px 7px 12px 0px #214085;
+    transition-duration: 0.3s;
+    /* translatey é a movimentação que o elemento vai realizar ao sobrepor o mesmo com o mouse 
+    box shadow é uma somra que vai aparecer ao redor do elemento
+    trasition duration é o tempo que vai levar até ocorrer toda a transformação do elemento*/
+
+}
+
+
